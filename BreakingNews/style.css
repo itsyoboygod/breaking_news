@@ -48,6 +48,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 .title p{
     color:  white;
     margin: 10px;
+    width: max-content;
 }
 
 .message{
@@ -125,3 +126,19 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    /* color: black; */
 }
 
+/* ANIMATION */
+
+.all {
+    animation: 2s myfirst cubic-bezier(0.4, 0, 1, 1);
+    animation-direction:alternate-reverse;
+  animation-duration: 1.8s;
+  /* animation-delay: 1s; */
+  animation-timing-function: ease-in-out;
+    
+  }
+  
+  @keyframes myfirst{
+    /* 0%   {  height: 0px; height: 200px;} */
+    100%  {    width: 0px}
+      
+  }
